@@ -111,6 +111,12 @@
                         type="object"
                         states="draft,hr_check,confirm,verify"
                     />
+                    <button
+                        string="Imprimir Recibo"
+                        name="print_payslip"
+                        type="object"
+                        states="draft,hr_check,confirm,verify"
+                    />
                     <field
                         name="state"
                         widget="statusbar"

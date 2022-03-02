@@ -659,3 +659,6 @@ class HrPayslip(models.Model):
             return line[0].total
         else:
             return 0.0
+
+    def print_payslip(self):
+        return self.env.ref("payroll.action_report_payslip").report_action(self)
